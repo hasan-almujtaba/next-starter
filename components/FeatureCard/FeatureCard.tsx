@@ -1,10 +1,11 @@
 import { Feature } from '@/types/feature'
-import useStyles from './FeatureCard.styles'
 
 const FeatureCard = ({ text }: Feature) => {
-  const { classes } = useStyles()
-
-  return <div className={classes.container}>{text}</div>
+  return (
+    <div className="rounded border w-full md:w-1/3 p-2 text-center mx-auto">
+      {text}
+    </div>
+  )
 }
 
 export default FeatureCard

@@ -1,0 +1,69 @@
+/* Generated using https://material-foundation.github.io/material-theme-builder/#/custom */
+
+:root {
+  /* Light theme */
+  --primary-light: #005eb4;
+  --on-primary-light: #ffffff;
+  --primary-container-light: #d5e3ff;
+  --on-primary-container-light: #001b3c;
+
+  --secondary-light: #555f71;
+  --on-secondary-light: #ffffff;
+  --secondary-container-light: #d9e3f8;
+  --on-secondary-container-light: #121c2b;
+
+  --tertiary-light: #6f5675;
+  --on-tertiary-light: #ffffff;
+  --tertiary-container-light: #f8d8fe;
+  --on-tertiary-container-light: #28132f;
+
+  --error-light: #ba1a1a;
+  --on-error-light: #ffffff;
+  --error-container-light: #ffdad6;
+  --on-error-container-light: #410002;
+
+  --background-light: #fdfbff;
+  --on-background-light: #1a1c1e;
+
+  --surface-light: #fdfbff;
+  --on-surface-light: #1a1c1e;
+
+  --outline-light: #74777f;
+
+  --surface-variant-light: #e0e2ec;
+  --on-surface-variant-light: #43474e;
+  /* Light theme */
+
+  /* Dark theme */
+  --primary-dark: #a8c8ff;
+  --on-primary-dark: #003061;
+  --primary-container-dark: #004689;
+  --on-primary-container-dark: #d5e3ff;
+
+  --secondary-dark: #bdc7dc;
+  --on-secondary-dark: #273141;
+  --secondary-container-dark: #3e4758;
+  --on-secondary-container-dark: #d9e3f8;
+
+  --tertiary-dark: #dbbce1;
+  --on-tertiary-dark: #3e2845;
+  --tertiary-container-dark: #563e5d;
+  --on-tertiary-container-dark: #f8d8fe;
+
+  --error-dark: #ffb4ab;
+  --on-error-dark: #690005;
+  --error-container-dark: #93000a;
+  --on-error-container-dark: #ffdad6;
+
+  --background-dark: #1a1c1e;
+  --on-background-dark: #e3e2e6;
+
+  --surface-dark: #1a1c1e;
+  --on-surface-dark: #e3e2e6;
+
+  --outline-dark: #8e9199;
+
+  --surface-variant-dark: #43474e;
+  --on-surface-variant-dark: #c4c6cf;
+  /* Dark theme */
+}

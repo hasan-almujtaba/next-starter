@@ -1,9 +1,7 @@
 import { NextPageWithLayout } from '@/types/layout'
-import DefaultLayout from '@/components/DefaulLayout/DefaultLayout'
+import DefaultLayout from 'layouts/DefaulLayout/DefaultLayout'
 import { ReactElement, useEffect, useState } from 'react'
 import useStore from '../store'
-import { Affix, Box, Button, Text } from '@mantine/core'
-import { dehydrate, QueryClient } from 'react-query'
 import Head from 'next/head'
 import FeatureList from '@/components/FeatureList/FeatureList'
 import Link from 'next/link'
@@ -32,66 +30,21 @@ const Home: NextPageWithLayout = () => {
       <Head>
         <title>Home</title>
       </Head>
-      <Box
-        sx={() => ({
-          textAlign: 'center',
-        })}
-      >
+
+      <div>
         <h1>Next Starter</h1>
-        <Text sx={() => ({ fontStyle: 'italic' })}>
-          Opinionated react starter built on top of Next JS
-        </Text>
-      </Box>
+        <div>Opinionated react starter built on top of Next JS</div>
+      </div>
 
       <FeatureList />
 
-      <Link href="/posts">
-        <Text
-          sx={() => ({
-            cursor: 'pointer',
-            textAlign: 'center',
-            marginTop: '10px',
-            '&:hover': {
-              textDecorationLine: 'underline',
-            },
-          })}
-        >
-          See example in action
-        </Text>
-      </Link>
-
-      <Affix position={{ bottom: 25, right: 20 }}>
-        <Button
-          onClick={incrementCountState}
-          radius={100}
-          sx={() => ({
-            height: '60px',
-            width: '60px',
-          })}
-        >
-          {count}
-        </Button>
-      </Affix>
+      <Link href="/posts">See example in action</Link>
     </>
   )
 }
 
 Home.getLayout = (page: ReactElement) => {
   return <DefaultLayout>{page}</DefaultLayout>
-}
-
-/**
- * dehydrateState for react-query
- * WARNING: Always return dehydrated state object in every page component.
- */
-export const getStaticProps = async () => {
-  const queryClient = new QueryClient()
-
-  return {
-    props: {
-      dehydratedState: dehydrate(queryClient),
-    },
-  }
 }
 
 export default Home
